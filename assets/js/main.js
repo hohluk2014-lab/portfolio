@@ -250,12 +250,11 @@
       if (film.poster) poster.style.backgroundImage = 'url("' + film.poster.replace(/"/g, '%22') + '")';
       poster.innerHTML =
         '<div class="vm-poster__text">' +
-          '<strong>Здесь будет плеер RUTUBE</strong>' +
-          '<span>Ссылка на ролик «' + escapeHtml(film.title || '') + '» ещё не добавлена. ' +
-          'Впишите её в поле <code>rutube</code> в файле assets/js/content.js</span>' +
+          '<strong>Видео пока недоступно</strong>' +
+          '<span>Для ролика «' + escapeHtml(film.title || '') + '» не задан локальный файл или корректная ссылка RUTUBE.</span>' +
         '</div>';
       vmFrame.appendChild(poster);
-      vmNote.textContent = 'Заглушка: ' + (film.duration ? film.duration + ' · ' : '') + 'ссылка на RUTUBE не задана';
+      vmNote.textContent = 'Источник видео не настроен';
     }
 
     $('#vm-close').focus({ preventScroll: true });
@@ -288,8 +287,8 @@
             'aria-label="Смотреть «' + escapeAttr(film.title || 'видео') + '»">' +
             (film.poster
               ? '<img src="' + escapeAttr(film.poster) + '" alt="" loading="lazy" decoding="async">'
-              : (film.src
-                ? '<video src="' + escapeAttr(mediaUrl(film.src)) + '" muted preload="metadata" playsinline></video>'
+              : (film.preview || film.src
+                ? '<video src="' + escapeAttr(mediaUrl(film.preview || film.src)) + '" muted preload="metadata" playsinline></video>'
                 : '')) +
             '<span class="film__shade"></span>' +
             badges.join('') +

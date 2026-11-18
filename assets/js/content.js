@@ -96,53 +96,53 @@ window.PORTFOLIO = {
 
   films: [
     {
-      poster: 'assets/img/video-01.jpg',
-      src: 'projects/vid/Фестиваль в центре 2026.mp4',
+      preview: 'projects/vid/Фестиваль в центре 2026.mp4',
+      rutube: 'https://rutube.ru/video/712b558983e0aa3063cc290d3ee4ca78/',
       title: 'Фестиваль в центре 2026',
       meta: 'Репортаж',
       duration: '4:12',
       year: 2026
     },
     {
-      poster: 'assets/img/video-02.jpg',
-      src: 'projects/vid/Интеграция 2026.mp4',
+      preview: 'projects/vid/Интеграция 2026.mp4',
+      rutube: 'https://rutube.ru/video/5db53faaa140e57eaf37a0a370a88dd0/',
       title: 'Интеграция 2026',
       meta: 'Репортаж',
       duration: '2:56',
       year: 2026
     },
     {
-      poster: 'assets/img/video-03.jpg',
-      src: 'projects/vid/В центре 2025.mp4',
+      preview: 'projects/vid/В центре 2025.mp4',
+      rutube: 'https://rutube.ru/video/a7b133b16ca2c226b0a778440400578c/',
       title: 'В центре 2025',
       meta: 'Репортаж',
       duration: '3:27',
       year: 2025
     },
     {
-      poster: 'assets/img/video-04.jpg',
-      src: 'projects/vid/Яркие Люди.mp4',
+      preview: 'projects/vid/Яркие Люди.mp4',
+      rutube: 'https://rutube.ru/video/00fd045bfd65bb6d378c38b736563569/',
       title: 'Яркие люди',
       meta: 'Репортаж',
       duration: '1:55'
     },
     {
-      poster: 'assets/img/video-01.jpg',
-      src: 'projects/vid/Информпоток Длинный.mp4',
+      preview: 'projects/vid/Информпоток Длинный.mp4',
+      rutube: 'https://rutube.ru/video/83467e1e4f9941be1df52b5e939d16e4/',
       title: 'Информпоток',
       meta: 'Репортаж',
       duration: '2:16'
     },
     {
-      poster: 'assets/img/video-02.jpg',
-      src: 'projects/vid/Муниципальный этап Зарница 2.0.mp4',
+      preview: 'projects/vid/Муниципальный этап Зарница 2.0.mp4',
+      rutube: 'https://rutube.ru/video/9e9f58fadf230bfaf8958604e864af4b/',
       title: 'Зарница 2.0',
       meta: 'Муниципальный этап',
       duration: '3:04'
     },
     {
-      poster: 'assets/img/video-03.jpg',
-      src: 'projects/vid/Заседание координационного совета по взаимодействию с Движением Первых при губернаторе ЛО.mp4',
+      preview: 'projects/vid/Заседание координационного совета по взаимодействию с Движением Первых при губернаторе ЛО.mp4',
+      rutube: 'https://rutube.ru/video/61ef8f99c66aa146a8d5e4103448e5df/',
       title: 'Координационный совет',
       meta: 'Движение Первых, Ленинградская область',
       duration: '3:16'
