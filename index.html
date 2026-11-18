@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ИМЯ ФАМИЛИЯ — фотограф и видеограф</title>
+
+<!--
+  ============================================================================
+  ПОРТФОЛИО · ПЕРВАЯ ВЕРСИЯ (с заглушками)
+  ============================================================================
+  Что где менять:
+    · Тексты, имя, контакты  → этот файл (index.html), помечено комментариями «ЗАМЕНИТЬ»
+    · Фотографии и видео     → assets/js/content.js
+    · Стили                   → assets/css/style.css
+    · Свои фото               → положить в assets/img и указать имена в content.js
+  Инструкция по выкладке на GitHub Pages — в README.md
+  ============================================================================
+-->
+
+<meta name="description" content="Портфолио фотографа и видеографа: свадьбы, портреты, город, путешествия, коммерческие съёмки и фильмы.">
+<meta name="theme-color" content="#0a0a0b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ИМЯ ФАМИЛИЯ — фотограф и видеограф">
+<meta property="og:description" content="Фотографии и фильмы: свадьбы, портреты, город, путешествия.">
+<meta property="og:image" content="assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="assets/img/hero-1.jpg">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#works">Перейти к работам</a>
+
+<!-- ======================= ШАПКА ======================= -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a class="brand" href="#top" aria-label="На главную">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <!-- ЗАМЕНИТЬ: имя или бренд -->
+      <span class="brand__text">ИМЯ ФАМИЛИЯ</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a class="nav__link" href="#works">Работы</a>
+      <a class="nav__link" href="#films">Видео</a>
+      <a class="nav__link" href="#about">Обо мне</a>
+      <a class="nav__link" href="#services">Съёмки</a>
+      <a class="nav__link" href="#contact">Контакты</a>
+    </nav>
+
+    <a class="header__cta" href="#contact">Написать</a>
+
+    <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" hidden>
+  <nav class="mobile-menu__nav" aria-label="Мобильная навигация">
+    <a href="#works">Работы</a>
+    <a href="#films">Видео</a>
+    <a href="#about">Обо мне</a>
+    <a href="#services">Съёмки</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+  <div class="mobile-menu__foot">
+    <!-- ЗАМЕНИТЬ: контакты -->
+    <a href="https://t.me/username" target="_blank" rel="noopener">Telegram</a>
+    <a href="mailto:hello@example.com">hello@example.com</a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ======================= ПЕРВЫЙ ЭКРАН ======================= -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__slide is-active" style="background-image:url('assets/img/hero-1.jpg')"></div>
+      <div class="hero__slide" style="background-image:url('assets/img/hero-2.jpg')"></div>
+      <div class="hero__slide" style="background-image:url('assets/img/hero-3.jpg')"></div>
+      <div class="hero__shade"></div>
+      <div class="hero__grain"></div>
+    </div>
+
+    <div class="hero__inner">
+      <p class="eyebrow hero__eyebrow">
+        <span>Фотограф</span>
+        <span class="eyebrow__dot"></span>
+        <span>Видеограф</span>
+        <span class="eyebrow__dot"></span>
+        <!-- ЗАМЕНИТЬ: город -->
+        <span>Москва</span>
+      </p>
+
+      <!-- ЗАМЕНИТЬ: имя и фамилия -->
+      <h1 class="hero__title">
+        <span class="hero__title-line">Имя</span>
+        <span class="hero__title-line hero__title-line--italic">Фамилия</span>
+      </h1>
+
+      <p class="hero__lead">
+        Снимаю свет, людей и движение —<br>
+        в фотографиях и в кино.<br>
+        Один визуальный язык, два инструмента.
+      </p>
+
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="#works">
+          <span>Смотреть работы</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="btn btn--ghost" type="button" data-film-open="0">
+          <span class="btn__play" aria-hidden="true"></span>
+          <span>Фестиваль 2026</span>
+        </button>
+      </div>
+
+      <div class="hero__foot">
+        <a class="scroll-hint" href="#works" aria-label="Листать вниз">
+          <span class="scroll-hint__line" aria-hidden="true"></span>
+          <span>листайте</span>
+        </a>
+        <ul class="socials">
+          <!-- ЗАМЕНИТЬ: ссылки -->
+          <li><a href="https://t.me/username" target="_blank" rel="noopener">Telegram</a></li>
+          <li><a href="https://vk.com/username" target="_blank" rel="noopener">VK</a></li>
+          <li><a href="https://instagram.com/username" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="mailto:hello@example.com">E-mail</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= БЕГУЩАЯ СТРОКА ======================= -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Свадьбы</span><span class="marquee__sep">◦</span>
+      <span>Портреты</span><span class="marquee__sep">◦</span>
+      <span>Город</span><span class="marquee__sep">◦</span>
+      <span>Путешествия</span><span class="marquee__sep">◦</span>
+      <span>Репортаж</span><span class="marquee__sep">◦</span>
+      <span>Коммерция</span><span class="marquee__sep">◦</span>
+      <span>Видео</span><span class="marquee__sep">◦</span>
+      <span>Свадьбы</span><span class="marquee__sep">◦</span>
+      <span>Портреты</span><span class="marquee__sep">◦</span>
+      <span>Город</span><span class="marquee__sep">◦</span>
+      <span>Путешествия</span><span class="marquee__sep">◦</span>
+      <span>Репортаж</span><span class="marquee__sep">◦</span>
+      <span>Коммерция</span><span class="marquee__sep">◦</span>
+      <span>Видео</span><span class="marquee__sep">◦</span>
+    </div>
+  </div>
+
+  <!-- ======================= РАБОТЫ ======================= -->
+  <section class="section section--works" id="works">
+    <div class="section__head">
+      <div class="section__head-left">
+        <p class="eyebrow"><span class="eyebrow__num">01</span> Избранное</p>
+        <h2 class="section__title">Работы</h2>
+      </div>
+      <p class="section__note">
+        Фотографии разных лет: свадьбы, портреты, город и путешествия.
+        Коллекция будет обновляться — сейчас на месте снимков стоят заглушки.
+      </p>
+    </div>
+
+    <div class="filters" id="filters" role="group" aria-label="Фильтр работ">
+      <!-- кнопки фильтров строятся из content.js -->
+    </div>
+
+    <div class="grid" id="grid" aria-live="polite"></div>
+
+    <noscript>
+      <p class="works__empty">
+        Для галереи нужен JavaScript. Фотографии также открываются напрямую
+        из папки <code>assets/img</code>.
+      </p>
+    </noscript>
+
+    <div class="works__foot">
+      <p class="works__count" id="works-count"></p>
+      <a class="link-arrow" href="#films">
+        <span>Семь роликов</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ======================= ВИДЕО ======================= -->
+  <section class="section section--films" id="films">
+    <div class="section__head">
+      <div class="section__head-left">
+        <p class="eyebrow"><span class="eyebrow__num">02</span> Кино</p>
+        <h2 class="section__title">Видео</h2>
+      </div>
+      <p class="section__note">
+        Репортажи и события. Ролик открывается поверх страницы
+        и играет прямо здесь.
+      </p>
+    </div>
+
+    <div class="films" id="films-list"></div>
+
+    <p class="films__hint">Нажмите на карточку — ролик откроется в плеере на этой странице.</p>
+  </section>
+
+  <!-- ======================= ОБО МНЕ ======================= -->
+  <section class="section section--about" id="about">
+    <div class="about">
+      <div class="about__media reveal">
+        <img src="assets/img/about.jpg" alt="Портрет фотографа" width="1000" height="1300" loading="lazy" decoding="async">
+        <div class="about__media-tag">заглушка</div>
+      </div>
+
+      <div class="about__body">
+        <p class="eyebrow"><span class="eyebrow__num">03</span> Обо мне</p>
+        <h2 class="section__title section__title--tight">
+          Фотография<br>и кино — <em>одна история</em>
+        </h2>
+
+        <!-- ЗАМЕНИТЬ: текст о себе -->
+        <p class="about__text">
+          Меня зовут <strong>Имя Фамилия</strong>, я фотограф и видеограф.
+          Начинал с репортажа, потом пришёл к свадьбам и портретам — и почти
+          сразу начал снимать движение: сначала для себя, потом для клиентов.
+        </p>
+        <p class="about__text">
+          Фотография учит видеть кадр, видео — видеть время. На съёмке я обычно
+          работаю в две камеры: одна делает фотографии, вторая пишет кино,
+          поэтому у вас остаётся и альбом, и фильм из одного и того же дня.
+        </p>
+
+        <dl class="stats">
+          <div class="stat"><dt>Опыт</dt><dd><span data-count="12">12</span> лет</dd></div>
+          <div class="stat"><dt>Съёмок</dt><dd><span data-count="420">420</span>+</dd></div>
+          <div class="stat"><dt>Стран</dt><dd><span data-count="9">9</span></dd></div>
+        </dl>
+
+        <div class="about__row">
+          <div>
+            <p class="about__label">Техника</p>
+            <p class="about__small">Sony A7 IV · объективы 24–70 f/2.8, 35 f/1.4 · DJI RS · свет Profoto</p>
+          </div>
+          <div>
+            <p class="about__label">География</p>
+            <p class="about__small">Москва и область, выезды по России и Европе</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= ФОРМАТЫ СЪЁМОК ======================= -->
+  <section class="section section--services" id="services">
+    <div class="section__head">
+      <div class="section__head-left">
+        <p class="eyebrow"><span class="eyebrow__num">04</span> Форматы</p>
+        <h2 class="section__title">Съёмки</h2>
+      </div>
+      <p class="section__note">
+        Можно заказать только фотографии, только видео или всё вместе.
+        В комбинированном формате съёмка идёт одной командой — и дешевле, чем две отдельные.
+      </p>
+    </div>
+
+    <div class="services">
+      <article class="service reveal">
+        <span class="service__num">01</span>
+        <h3 class="service__title">Фотосъёмка</h3>
+        <p class="service__text">Свадьбы, лавстори, портреты, семейные съёмки. Авторская цветокоррекция и ретушь каждого кадра.</p>
+        <ul class="service__list">
+          <li>от 3 часов работы</li>
+          <li>150–400 кадров в обработке</li>
+          <li>онлайн-галерея для выбора</li>
+        </ul>
+      </article>
+
+      <article class="service reveal">
+        <span class="service__num">02</span>
+        <h3 class="service__title">Видеосъёмка</h3>
+        <p class="service__text">Свадебные фильмы, имиджевые ролики, репортаж. Монтаж, звук, цвет — всё внутри.</p>
+        <ul class="service__list">
+          <li>фильм 3–8 минут</li>
+          <li>короткая версия для соцсетей</li>
+          <li>срок монтажа 2–4 недели</li>
+        </ul>
+      </article>
+
+      <article class="service service--accent reveal">
+        <span class="service__num">03</span>
+        <h3 class="service__title">Фото + видео</h3>
+        <p class="service__text">Два результата из одного дня. Одна команда, один тайминг, общий визуальный стиль.</p>
+        <ul class="service__list">
+          <li>съёмка в две камеры</li>
+          <li>альбом и фильм</li>
+          <li>выезд по России</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="services__foot">
+      <p>Не нашли свой формат? Напишите — соберу смету под задачу.</p>
+      <a class="btn btn--ghost" href="#contact"><span>Обсудить съёмку</span></a>
+    </div>
+  </section>
+
+  <!-- ======================= КОНТАКТЫ ======================= -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <p class="eyebrow"><span class="eyebrow__num">05</span> Контакты</p>
+      <h2 class="contact__title">Давайте<br><em>снимем</em> что-то стоящее</h2>
+      <p class="contact__lead">
+        Расскажите про дату и идею — отвечу в течение дня, предложу тайминг
+        и покажу примеры похожих съёмок.
+      </p>
+
+      <div class="contact__grid">
+        <!-- ЗАМЕНИТЬ: контакты -->
+        <a class="contact__card" href="https://t.me/username" target="_blank" rel="noopener">
+          <span class="contact__label">Telegram</span>
+          <span class="contact__value">@username</span>
+        </a>
+        <a class="contact__card" href="https://wa.me/79000000000" target="_blank" rel="noopener">
+          <span class="contact__label">WhatsApp</span>
+          <span class="contact__value">+7 900 000-00-00</span>
+        </a>
+        <a class="contact__card" href="mailto:hello@example.com">
+          <span class="contact__label">E-mail</span>
+          <span class="contact__value">hello@example.com</span>
+        </a>
+        <a class="contact__card" href="tel:+79000000000">
+          <span class="contact__label">Телефон</span>
+          <span class="contact__value">+7 900 000-00-00</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ======================= ПОДВАЛ ======================= -->
+<footer class="footer">
+  <div class="footer__inner">
+    <span>© <span id="year">2026</span> ИМЯ ФАМИЛИЯ</span>
+    <span class="footer__muted">Фотограф и видеограф · Москва</span>
+    <a class="footer__top" href="#top">Наверх ↑</a>
+  </div>
+</footer>
+
+<!-- ======================= ЛАЙТБОКС ======================= -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фотографии" hidden>
+  <div class="lightbox__bar">
+    <span class="lightbox__counter" id="lb-counter">01 / 14</span>
+    <button class="icon-btn" id="lb-close" type="button" aria-label="Закрыть">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+
+  <button class="lightbox__nav lightbox__nav--prev" id="lb-prev" type="button" aria-label="Предыдущая фотография">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+  </button>
+
+  <figure class="lightbox__stage">
+    <img class="lightbox__img" id="lb-img" src="" alt="">
+  </figure>
+
+  <button class="lightbox__nav lightbox__nav--next" id="lb-next" type="button" aria-label="Следующая фотография">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+  </button>
+
+  <div class="lightbox__caption" id="lb-caption"></div>
+</div>
+
+<!-- ======================= ВИДЕО-МОДАЛКА ======================= -->
+<div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-label="Просмотр видео" hidden>
+  <div class="video-modal__bar">
+    <span class="video-modal__title" id="vm-title"></span>
+    <button class="icon-btn" id="vm-close" type="button" aria-label="Закрыть">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+
+  <div class="video-modal__stage" id="vm-stage">
+    <div class="video-modal__frame" id="vm-frame"></div>
+  </div>
+
+  <p class="video-modal__note" id="vm-note"></p>
+</div>
+
+<!-- курсор-подпись для галереи -->
+<div class="cursor-label" id="cursor-label" aria-hidden="true"></div>
+
+<script src="assets/js/content.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
