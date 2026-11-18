@@ -1,0 +1,50 @@
+{
+  "slices": [
+    {
+      "file": "F:\\deepproj\\portfolio\\tools\\shots\\slice-00.png",
+      "y": 0
+    },
+    {
+      "file": "F:\\deepproj\\portfolio\\tools\\shots\\slice-01.png",
+      "y": 900
+    },
+    {
+      "file": "F:\\deepproj\\portfolio\\tools\\shots\\slice-02.png",
+      "y": 1800
+    },
+    {
+      "file": "F:\\deepproj\\portfolio\\tools\\shots\\slice-03.png",
+      "y": 2700
+    },
+    {
+      "file": "F:\\deepproj\\portfolio\\tools\\shots\\slice-04.png",
+      "y": 3600
+    },
+    {
+      "file": "F:\\deepproj\\portfolio\\tools\\shots\\slice-05.png",
+      "y": 4500
+    },
+    {
+      "file": "F:\\deepproj\\portfolio\\tools\\shots\\slice-06.png",
+      "y": 5400
+    },
+    {
+      "file": "F:\\deepproj\\portfolio\\tools\\shots\\slice-07.png",
+      "y": 6300
+    },
+    {
+      "file": "F:\\deepproj\\portfolio\\tools\\shots\\slice-08.png",
+      "y": 7200
+    },
+    {
+      "file": "F:\\deepproj\\portfolio\\tools\\shots\\slice-09.png",
+      "y": 8100
+    },
+    {
+      "file": "F:\\deepproj\\portfolio\\tools\\shots\\slice-10.png",
+      "y": 8337
+    }
+  ],
+  "total": 9237,
+  "step": 900
+}
